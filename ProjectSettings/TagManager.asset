@@ -14,8 +14,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - OnGround
+  - OnAsphalt
   - 
   - 
   - 
@@ -41,4 +41,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 1
+  - name: New Layer
+    uniqueID: 3846967321
     locked: 0

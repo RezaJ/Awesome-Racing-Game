@@ -28,10 +28,10 @@ public class Movement : MonoBehaviour
 
         // rotate car
         if (left)
-            transform.Rotate(Vector3.forward, turnSpeed);
+            transform.Rotate(Vector3.forward, turnSpeed * rigidBody.velocity.magnitude);
 
         if (right)
-            transform.Rotate(Vector3.forward, -turnSpeed);
+            transform.Rotate(Vector3.forward, -turnSpeed * rigidBody.velocity.magnitude);
 
         // add force
         if (up) {
